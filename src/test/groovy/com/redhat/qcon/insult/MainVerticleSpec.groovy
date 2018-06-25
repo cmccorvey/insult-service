@@ -35,4 +35,6 @@ class MainVerticleSpec extends Specification {
             async.await(3600)
             vertx.close()
     }
+
+    // test
 }
