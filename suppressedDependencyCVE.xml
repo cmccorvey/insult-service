@@ -16,7 +16,7 @@
     </suppress>
     <suppress>
         <notes><![CDATA[
-   file name: vertx-infinispan-3.5.1.jar
+   file name: vertx-infinispan-3.5.2.jar
    ]]></notes>
         <gav regex="true">^io\.vertx:vertx-infinispan:.*$</gav>
         <cpe>cpe:/a:infinispan:infinispan</cpe>
