@@ -221,11 +221,6 @@ pipeline {
   stages {
     stage('Quality And Security') {
       parallel {
-        stage('OWASP Dependency Check') {
-          steps {
-            sh 'mvn -T 2 dependency-check:check'
-          }
-        }
         stage('Compile & Test') {
           steps {
             sh 'mvn -T 2 package'
