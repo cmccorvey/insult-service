@@ -312,8 +312,8 @@ pipeline {
           label "jenkins-slave-zap"
         }
         script {
-          def testProject = ciProject.replaceFirst(/^labs-ci-cd/, /labs-test/)
-          sh "/zap/zap-baseline.py -r baseline.html -t http://insult-service-${testProject}.apps.qcon.openshift.opentlc.com/"
+          def testZedProject = ciProject.replaceFirst(/^labs-ci-cd/, /labs-test/)
+          sh "/zap/zap-baseline.py -r baseline.html -t http://insult-service-${testZedProject}.apps.qcon.openshift.opentlc.com/"
           publishHTML([
             allowMissing: false, alwaysLinkToLastBuild: false,
             keepAll: true, reportDir: '/zap/wrk', reportFiles: 'baseline.html',
